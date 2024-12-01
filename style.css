@@ -1,0 +1,26 @@
+body {
+    scroll-behavior: smooth;
+}
+
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(135deg, #007BFF, #0056B3);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section img {
+    width: 200px;
+    height: 200px;
+}
+
+.skills-section i {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.contact-section {
+    background-color: #f8f9fa;
+}
