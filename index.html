@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -19,10 +21,10 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Nipun Anupama</a>
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button> -->
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
@@ -39,8 +41,14 @@
     <section id="home" class="hero-section text-center">
         <div class="container">
             <h1 class="display-4">Hi, I'm Nipun Anupama</h1>
-            <p class="lead">Software Engineering Undergraduate | Front-End Specialist</p>
+            <p class="lead">FullStack Developer | UI/UX Desinger | Video Editor</p>
             <a href="#projects" class="btn btn-primary btn-lg">Explore My Work</a>
+            <div>
+                <a href="https://github.com/Nipz66"><i class="bi bi-github"></i></a>
+            </div>
+           
+
+
         </div>
     </section>
 
@@ -50,10 +58,19 @@
             <h2 class="text-center mb-4">About Me</h2>
             <div class="row">
                 <div class="col-md-4 text-center">
-                    <img src="profile.jpg" alt="Profile Picture" class="rounded-circle img-fluid mb-3">
+                    <img src="Image/img 1.png" alt="Profile Picture" class="rounded-circle img-fluid mb-3">
                 </div>
                 <div class="col-md-8">
-                    <p>Hello! I'm a software engineering undergraduate at UCSC with a passion for front-end development and solving complex problems. I specialize in Angular, JavaFX, Spring Boot, and Hibernate. I aim to build intuitive and user-friendly digital experiences.</p>
+                    <p>Hello! I'm a software engineering undergraduate at UCSC with a passion for front-end development
+                        and solving complex problems. I aim
+                        to build intuitive and user-friendly digital experiences.</p>
+
+                    <h4>Education</h4>
+                    <p>BSc in Software Engineering</p>
+                    <h4>Location</h4>
+                    <p>Kurunagala, Sri Lanka</p>
+                    <h4>Email</h4>
+                    <p>anupamaalahakoon66@gmail.com</p>
                 </div>
             </div>
         </div>
@@ -66,7 +83,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <img src="Image/parcelrailway.jpg" class="card-img-top" alt="Project 1">
                         <div class="card-body">
                             <h5 class="card-title">Railway Parcel Tracking</h5>
                             <p class="card-text">A web-based system to track parcels across railway stations.</p>
@@ -79,19 +96,118 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section py-5">
+    <section id="skills" class="skills-section py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-4">Skills</h2>
-            <div class="row">
-                <div class="col-md-3 text-center">
-                    <i class="fa-brands fa-angular fa-3x"></i>
-                    <h5>Angular</h5>
+            <div class="row justify-content-center">
+
+                <!-- Front-End Development Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fa-brands fa-html5 fa-3x text-danger mb-3"></i>
+                            <h5 class="card-title">Front-End Development</h5>
+                            <table class="table borderless-table">
+                                <tbody>
+                                    <tr>
+                                        <td>HTML</td>
+                                        <td class="text-end">Advanced</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CSS</td>
+                                        <td class="text-end">Advanced</td>
+                                    </tr>
+                                    <tr>
+                                        <td>JavaScript</td>
+                                        <td class="text-end">Advanced</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Angular</td>
+                                        <td class="text-end">Intermediate</td>
+                                    </tr>
+                                    <tr>
+                                        <td>JavaFX</td>
+                                        <td class="text-end">Intermediate</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-                <!-- Repeat for more skills -->
+
+                <!-- Back-End Development Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-server fa-3x text-secondary mb-3"></i>
+                            <h5 class="card-title">Back-End Development</h5>
+                            <table class="table borderless-table">
+                                <tbody>
+                                    <tr>
+                                        <td>Spring Boot</td>
+                                        <td class="text-end">Intermediate</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hibernate</td>
+                                        <td class="text-end">Intermediate</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MySQL</td>
+                                        <td class="text-end">Intermediate</td>
+                                    </tr>
+                                    <tr>
+                                        <td>REST APIs</td>
+                                        <td class="text-end">Intermediate</td>
+                                    </tr>
+                                    <tr>
+                                        <td>JDBC</td>
+                                        <td class="text-end">Beginner</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Frameworks Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-tools fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">Tools & Frameworks</h5>
+                            <table class="table borderless-table">
+                                <tbody>
+                                    <tr>
+                                        <td>Figma</td>
+                                        <td class="text-end">Advanced</td>
+                                    </tr>
+                                    <tr>
+                                        <td>JFoenix</td>
+                                        <td class="text-end">Intermediate</td>
+                                    </tr>
+                                    <tr>
+                                        <td>UI/UX Design Tools</td>
+                                        <td class="text-end">Intermediate</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Agile Development</td>
+                                        <td class="text-end">Intermediate</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Git</td>
+                                        <td class="text-end">Intermediate</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
+
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section py-5 bg-light">
