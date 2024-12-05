@@ -62,3 +62,89 @@ body {
     text-align: right;
     font-weight: 600;
 }
+
+#certificates {
+    position: relative;
+}
+
+.certificate-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.certificate-thumbnail {
+    width: 100%;
+    transition: transform 0.3s ease;
+    /* Smooth zoom effect */
+    cursor: pointer;
+}
+
+.certificate-popup {
+    display: none;
+    /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-box {
+    position: relative;
+    max-width: 90%;
+    /* Allow for larger pop-up size */
+    max-height: 90%;
+    /* Prevent the image from overflowing */
+}
+
+.popup-box img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.certificate-item:hover .certificate-popup {
+    display: flex;
+    /* Show pop-up on hover */
+}
+
+.certificate-item:hover .certificate-thumbnail {
+    transform: scale(1.2);
+    /* Zoom the image on hover (1.2x for a moderate effect) */
+}
+
+.certificate-popup img {
+    transform: scale(1);
+    /* Default size of the pop-up image */
+}
+
+.certificate-popup:hover {
+    display: flex;
+    /* Keep pop-up visible on hover */
+}
+
+/* Minimal CSS */
+#social-media .social-icon {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    transition: transform 0.3s, color 0.3s ease;
+}
+
+#social-media .social-icon:hover {
+    color: #007bff;
+    /* Change to blue on hover */
+    transform: scale(1.1);
+    /* Slight zoom effect */
+}
+
+#social-media p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
